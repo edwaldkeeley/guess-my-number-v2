@@ -12,11 +12,11 @@ document.querySelector('.check').addEventListener('click', function () {
   console.log(guess, typeof guess);
 
   if (!guess) {
-    displayMessage('No number!');
+    displayMessage('🚫No number!');
   } else if (guess === secretNumber) {
     displayMessage('🎉Correct Number!');
     document.querySelector('.number').textContent = secretNumber;
-    document.querySelector('.failed').textContent = 'Correct Number';
+    document.querySelector('.failed').textContent = 'Correct Number!';
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
 
